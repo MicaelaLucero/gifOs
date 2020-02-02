@@ -1,141 +1,151 @@
 .light {
-    background-color: #FFF4FD;
-    color: black;
-    font-family:'Chakra Petch', sans-serif;
+  background-color: #fff4fd;
+  color: black;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  .bar {
+    padding-left: 7px;
+    padding-top: 4px;
+    width: 100vw;
+    height: 23px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%);
+    box-shadow: 0 1px 0 0 #110038;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vw;
+    height: 100px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .button-create {
+    width: 144px;
+    height: 36px;
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    font-family: "Chakra Petch", sans-serif;
     font-size: 1rem;
-    .bar{
-        padding-left: 7px;
-        padding-top: 4px;
-        width: 100vw;
-        height: 23px;
-        font-family: 'Chakra Petch', sans-serif;
-        font-size: 12px;
-        color: white;
-        background: linear-gradient(left, #4180F6 0%, #F7C9F3 100%);
-        box-shadow: 0 1px 0 0 #110038;
-        
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    color: #110038;
+    &:hover {
+      background: #e6bbe2;
     }
+  }
 
-    .button-create{
-        width: 144px;
-        height: 36px;
-        background: #F7C9F3;
-        border: 1px solid #110038;
-        font-family:'Chakra Petch', sans-serif;
-        font-size: 1rem;
-        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-        color: #110038;
-        &:hover {
+  .button-choose {
+    width: 144px;
+    height: 36px;
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1rem;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    color: #110038;
 
-            background: #E6BBE2;
-
-            span {
-                border: 1px dotted #110038;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    
+    &:hover {
+      background: #e6bbe2;
     }
+  }
+  .choose-drop-down-list {
+    width: 36px;
+    height: 36px;
+    background-color: #f7c9f3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    color: #110038;
+    &:hover {
+      background: #e6bbe2;
 
-    .button-choose {
-        width: 144px;
-        height: 36px;
-        background: #F7C9F3;
-        border: 1px solid #110038;
-        font-family:'Chakra Petch', sans-serif;
-        font-size: 1rem;
-        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-        color: #110038;
-
-        &:hover {
-
-            background: #E6BBE2;
-
-            span {
-                border: 1px dotted #110038;
-                width: 100%;
-                height: 100%;
-            }
-        }
+      span {
+        border: 1px dotted #110038;
+        width: 100%;
+        height: 100%;
+      }
     }
-        .choose-drop-down-list{
-            width: 36px;
-            height: 36px;
-            background-color: #F7C9F3;
-            border: 1px solid #110038;
-            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-        color: #110038;
-        &:hover {
+  }
+}
 
-            background: #E6BBE2;
+.container {
+  .rectangle {
+    background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%);
+  }
+  .rectangle-copy {
+    &:hover {
+      color: #110038;
+      background: #997d97;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    }
+  }
+}
 
-            span {
-                border: 1px dotted #110038;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-        }
-    
-    .container{
-    .rectangle{
-        background: linear-gradient(left, #4180F6 0%, #F7C9F3 100%);
-    }
-        .rectangle-copy{
-            &:hover {
-                color: #110038;
-                background: #997D97;
-                border: 1px solid #110038;
-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-    
-                span {
-                    border: 1px dotted #110038;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
 
-    }
+.suggestion{
+  width: 90vw;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  margin:40px;
 }
 
 .container-rectangle{
-    display: flexbox;
-    justify-content: flex-end;
-    flex-flow: wrap row;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
-    .rectangle{
-        width: 1200px;
-        height: 32px;
-        background: #FFFAFE;
-border: 1px solid #E6BBE2;
-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
-    }
-    .gif{
-        width: 288px;
-        height: 313px;
-        background-color: #B4B4B4;
-        box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
-        .rectangle-gif{
-            width: 280px;
-            height: 24px;
-            background: linear-gradient(left, #4180F6 0%, #F7C9F3 100%);
-        }
-        .btn-close{
-            margin-left: 260px;
-        }
-        .img-gif{
-            width: 280px;
-            height: 280px;
-        }
-        #watch-more{
-            width: 81px;
-            height: 34px;
-            font-family: 'Chakra Petch', sans-serif;
-            color: #FFFFFF;
-            background: #4180F6;
-border: 1px solid #4C2F99;
-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
-        }
-    }
+.gif {
+  width: 288px;
+  height: 313px;
+  background-color: #b4b4b4;
+  box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
+  margin:10px;
+  .rectangle-gif {
+    width: 288px;
+    height: 24px;
+    background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%);
+  }
+  .btn-close {
+    margin-left: 260px;
+  }
+  .img-gif {
+    width: 288px;
+    height: 280px;
+    position: absolute;
+  }
+  .watch-more {
+    width: 81px;
+    height: 34px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #ffffff;
+    background: #4180f6;
+    border: 1px solid #4c2f99;
+    box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+    position: relative;
+    z-index: 1;
+    top: 240px;
+    left: 15px;
+  }
+  .watch-more-1 {
+    width: 81px;
+    height: 34px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #ffffff;
+    background: #4180f6;
+    border: 1px solid #4c2f99;
+    box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+    position: relative;
+    z-index: 1;
+    top: 240px;
+    left: 15px;
+  }
+}
