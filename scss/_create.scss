@@ -1,0 +1,75 @@
+.logo{
+    margin:50px 0px 0px 100px;
+    .arrow{
+        margin-bottom: 10px;
+    }
+}
+
+.brand_message{
+    width: 500px;
+    height: 23px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%);
+    box-shadow: 0 1px 0 0 #110038;
+}
+
+.title_message{
+    margin-left:5px;
+}
+
+.container_pop_up{
+    display: flex;
+    justify-content: center;
+}
+.pop_up{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    margin: 100px;
+    background-color: #b4b4b4d3;
+    box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    .img_info{
+        width: 40px;
+        height: 30px;
+        padding: 18px 0px 0px 13px;
+    }
+}
+
+.text_info{
+    font-size: 12px;
+    font-weight: 100;
+    margin: 20px 0px 0px 20px;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    margin:10px;
+    background-color: #f7c9f39a;
+}
+
+.button_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 35vw;
+    height: 50px;
+}
+
+.container_text_my_guifos{
+    display: flex;
+    justify-content: center;
+}
+.input_my_guifos{
+    width: 80vw;
+}
+
+

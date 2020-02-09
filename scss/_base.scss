@@ -1,10 +1,57 @@
+#search_container{
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: space-around;    
+    align-content: space-around;
+}
+
 .button {
     padding: 9px 24px;
 }
-.navbar-brand-container{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    width: 180px;
+    height:110px;
+    right: 0px;
+    z-index: 1;
+}
+.dropdown_content a {
+    width: 120px;
+    height: 15px;
+    color: black;
+    background-color: #fcfbffde;
+    box-shadow: inset 2px 2px 0 0 #FFFF, inset -2px -2px 0 0 rgb(168, 167, 167);
+    padding: 12px 20px;
+    margin:10px;
+    text-decoration: none;
+    display: block;
+}
+      
+.dropdown_content a:hover {
+    background-color: #4c49ffde;
+    color: white;
+    box-shadow: inset 2px 2px 0 0 #FFFF, inset -2px -2px 0 0 #8F8F8F;
+}
+      
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.navbar_brand_container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+ul li p{
+    margin:10px;
 }
 .container{
     width: 90vw;
@@ -13,7 +60,7 @@
     box-shadow: inset 2px 2px 0 0 #FFFF, inset -2px -2px 0 0 #8F8F8F;
     margin: 40px;
 
-    .rectangle{
+    .container_search{
         width: 90vw;
         height: 24px;
         font-size: 14px;
@@ -23,14 +70,19 @@
         }
         }
         .input{
-            width: 70vw;
+            width: 80vw;
             height: 48px;
             margin-left: 15px;
             margin-top: 10px;
             border: 1px solid #979797;
             box-shadow: inset -2px -2px 0 0 #FFFF, inset 2px 2px 0 0 #000000;
         }
-        .rectangle-copy{
+        input[type="text"]{
+            font-size:20px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .search_button{
             width: 102px;
             height: 36px;
             background-color: #B4B4B4;

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src="./js/functions.js"></script>
     <script src="./js/index.js"></script>
     <title>gifOS</title>
 </head>
@@ -14,70 +15,76 @@
     <header>
         <section class="bar">¡Bienvenidos/as a Gifos.com!------Donde los Gifos están.//////Número de visitas:
         </section>
-        <section class="navbar-brand-container">
-            <div class="navbar-brand-image">
-                <img src="./assets/gifOF_logo.png" alt=""/>
+        <section class="navbar_brand_container">
+            <div class="navbar_brand_image">
+                <img src="./assets/gifOF_logo.png" alt="" />
             </div>
-             <nav>
-                  <ul>
-                      <li><button class="button-create">Crear Gifos</button></li>
-                      <li><button class="button-choose">Elegir Tema</button></li>
-                      <li><button class="choose-drop-down-list"><img src="assets/dropdown.svg" alt="deploy"></button></li>
-                      <!-- <li id="mis">Mis Gifos</li> -->
-                 </ul>
-             </nav>
+            <nav>
+                <ul>
+                    <li><button class="button_create">Crear Gifos</button></li>
+                    <li><button class="button_choose">Elegir Tema</button></li>
+                    <li class="dropdown"><button class="choose_dropdown_list"><img src="assets/dropdown.svg"
+                                alt="deploy"></button>
+                        <div class="dropdown_content">
+                            <a href="#" class="day">Saylor Day</a>
+                            <a href="#" class="night">Saylor Night</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Mis Guifos</p>
+                    </li>
+                </ul>
+            </nav>
         </section>
-            <section class="container">
-                <section class="rectangle"><p id="search">Buscar</p></section>
-                <input type="text" class="input">
-                <button class="rectangle-copy"><img src="assets/lupa.svg" alt="loupe" id="btn_search"
-                        class="loupe">Buscar</button>
+        <section class="container">
+            <section class="container_search">
+                <p id="search">Buscar</p>
             </section>
-            <section class="suggestion"><p>Hoy te sugerimos</p></section>
-                <section class="container-rectangle">
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more">Ver más</button>
-                    </div>
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more">Ver más</button>
-                    </div>
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more">Ver más</button>
-                    </div>
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more">Ver más</button>
-                    </section>
-                    <section class="suggestion"><p>Tendencias</p></section>
-                    <section class="container-rectangle">
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more-1">Ver más</button>
-                    </div>
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more-1">Ver más</button>
-                    </div>
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more-1">Ver más</button>
-                    </div>
-                    <div class="gif">
-                        <div class="rectangle-gif"><img src="assets/button3.svg" alt="btn-close" class="btn-close">
-                        </div>
-                        <img src="" alt="" class="img-gif"><button class="watch-more-1">Ver más</button>
-                    </div>
-            </section>
+            <input type="text" class="input" id="search_input">
+            <button class="search_button" id="search_button"><img src="assets/lupa.svg" alt="loupe"
+                    class="loupe">Buscar</button>
+        </section>
+        <section class="suggestion">
+            <p>Hoy te sugerimos</p>
+        </section>
+        <section class="trending_container" id="trending_container">
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#desencanto</p>
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img1" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="watch_more">Ver más</button>
+            </div>
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#the big bang theory</p> 
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img2" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="watch_more">Ver más</button>
+            </div>
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#simpsons</p> 
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img3" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="watch_more">Ver más</button>
+            </div>
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#sex and the city</p> 
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img4" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="watch_more">Ver más</button>
+        </section>
+        <section class="suggestion">
+            <p>Tendencias</p>
+        </section>
+        <section id="search_container">
+        </section>
     </header>
 </body>
 </html>
