@@ -4,10 +4,6 @@
     justify-content: space-around;    
     align-content: space-around;
 }
-
-.button {
-    padding: 9px 24px;
-}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -17,27 +13,34 @@
     position: absolute;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-    width: 180px;
-    height:110px;
+    width: 170px;
+    height:102px;
     right: 0px;
     z-index: 1;
 }
 .dropdown_content a {
-    width: 120px;
-    height: 15px;
-    color: black;
+    width: 140px;
+    height: 36px;
     background-color: #fcfbffde;
     box-shadow: inset 2px 2px 0 0 #FFFF, inset -2px -2px 0 0 rgb(168, 167, 167);
-    padding: 12px 20px;
+    padding: 2px 5px;
     margin:10px;
     text-decoration: none;
     display: block;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
 }
       
 .dropdown_content a:hover {
-    background-color: #4c49ffde;
-    color: white;
-    box-shadow: inset 2px 2px 0 0 #FFFF, inset -2px -2px 0 0 #8F8F8F;
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 22px;
 }
       
 .dropdown:hover .dropdown_content {
@@ -46,22 +49,20 @@
 
 .navbar_brand_container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px 55px 0px 40px;
 }
 
-ul li p{
-    margin:10px;
-}
 .container{
-    width: 90vw;
+    width: 1355px;
     height: 100px;
-    background-color: #B4B4B4;
-    box-shadow: inset 2px 2px 0 0 #FFFF, inset -2px -2px 0 0 #8F8F8F;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     margin: 40px;
 
     .container_search{
-        width: 90vw;
+        width: 1355px;
         height: 24px;
         font-size: 14px;
         color: #FFFF;
@@ -85,15 +86,44 @@ ul li p{
         .search_button{
             width: 102px;
             height: 36px;
-            background-color: #B4B4B4;
-            font-family: 'Chakra Petch', sans-serif;
+            background: #E6E6E6;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
             font-size: 16px;
+            color: #B4B4B4;
+            letter-spacing: 0;
             line-height: 18px;
-            color: #8F8F8F;
+            margin-left: 30px;
         }
         .loupe{
             width: 16px;
             height: auto;
             color: #8F8F8F;
         }
+}
+
+.write_input{
+    width: 1355px;
+    height: 160px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    position: relative;
+    bottom: 41px;
+    left: 41px;
+    display: none;
+}
+
+.suggested_gif{
+    width: 1200px;
+    height: 34px;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    border: 1px solid #110038;
+    margin: 10px;
+    padding: 3px;
 }

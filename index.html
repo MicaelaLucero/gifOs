@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./index.css">
+    <link rel="next" href="./ready_video.html">
+    <link rel="next" href="./start_video.html">
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
     <script src="./js/functions.js"></script>
     <script src="./js/index.js"></script>
@@ -17,32 +19,40 @@
         </section>
         <section class="navbar_brand_container">
             <div class="navbar_brand_image">
-                <img src="./assets/gifOF_logo.png" alt="" />
+                <img id="logo_light" src="./assets/gifOF_logo.png" alt="" />
+                <img id="logo_dark" src="./assets/gifOF_logo_dark.png" alt="" />
             </div>
-            <nav>
-                <ul>
-                    <li><button class="button_create">Crear Gifos</button></li>
-                    <li><button class="button_choose">Elegir Tema</button></li>
-                    <li class="dropdown"><button class="choose_dropdown_list"><img src="assets/dropdown.svg"
-                                alt="deploy"></button>
-                        <div class="dropdown_content">
-                            <a href="#" class="day">Saylor Day</a>
-                            <a href="#" class="night">Saylor Night</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Mis Guifos</p>
-                    </li>
-                </ul>
-            </nav>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="create.html"><button class="button_create">Crear Gifos</button></a></li>
+                        <li><button class="button_choose">Elegir Tema</button></li>
+                        <li class="dropdown"><button class="choose_dropdown_list"><img src="assets/dropdown.svg"
+                                    alt="deploy"></button>
+                            <div class="dropdown_content">
+                                <a href="#" class="day">Saylor Day</a>
+                                <a href="#" class="night">Saylor Night</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="create.html" id="mys_guifos_link">Mis Guifos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
         <section class="container">
             <section class="container_search">
                 <p id="search">Buscar</p>
             </section>
-            <input type="text" class="input" id="search_input">
+            <input type="text" class="input" id="search_input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras..">
             <button class="search_button" id="search_button"><img src="assets/lupa.svg" alt="loupe"
                     class="loupe">Buscar</button>
+        </section>
+        <section class="write_input">
+            <div class="suggested_gif">Pets</div>
+            <div class="suggested_gif">The Walking Dead</div>
+            <div class="suggested_gif">Friends</div>            
         </section>
         <section class="suggestion">
             <p>Hoy te sugerimos</p>
@@ -50,7 +60,7 @@
         <section class="trending_container" id="trending_container">
             <div class="gif">
                 <div class="container_gif">
-                    <p>#desencanto</p>
+                    <p>#Desencanto</p>
                     <img src="assets/button3.svg" alt="btn_close" class="btn_close">
                 </div>
                 <img id="img1" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
@@ -58,7 +68,7 @@
             </div>
             <div class="gif">
                 <div class="container_gif">
-                    <p>#the big bang theory</p> 
+                    <p>#Futurama</p>
                     <img src="assets/button3.svg" alt="btn_close" class="btn_close">
                 </div>
                 <img id="img2" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
@@ -66,7 +76,7 @@
             </div>
             <div class="gif">
                 <div class="container_gif">
-                    <p>#simpsons</p> 
+                    <p>#Simpsons</p>
                     <img src="assets/button3.svg" alt="btn_close" class="btn_close">
                 </div>
                 <img id="img3" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
@@ -74,7 +84,7 @@
             </div>
             <div class="gif">
                 <div class="container_gif">
-                    <p>#sex and the city</p> 
+                    <p>#Dibujos animados</p>
                     <img src="assets/button3.svg" alt="btn_close" class="btn_close">
                 </div>
                 <img id="img4" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">

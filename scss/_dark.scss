@@ -1,30 +1,29 @@
 .dark {
   background-color: #110038;
   color: white;
-  font-family: "Chakra Petch", sans-serif;
   font-size: 1rem;
   .bar {
     padding-left: 7px;
     padding-top: 4px;
     width: 1438px;
     height: 23px;
-    font-family: "Chakra Petch", sans-serif;
     font-size: 12px;
     color: white;
     background: linear-gradient(left, #2e32fb 0%, #ee3efe 100%);
     box-shadow: 0 1px 0 0 #110038;
   }
 
-  .navbar-brand-image {
-    background-image: url("/assets/gifOF_logo_dark.png");
+  .navbar_brand_image {
+    #logo_light{
+    background-image: url('/assets/gifOF_logo_dark.png');
+    display: none;
+    }
     background: no-repeat;
   }
 
   ul {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    width: 50vw;
     height: 100px;
   }
 
@@ -32,46 +31,63 @@
     list-style: none;
   }
 
-  .button-create {
+  .button_create {
     width: 144px;
     height: 36px;
-    background: #ee3efe;
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 1rem;
+    background: #EE3EFE;
     border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
-    color: #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 14px;
     &:hover {
       background: #ce36db;
     }
   }
 
-  .button-choose {
-    width: 144px;
+  .button_choose {
+    width: 131px;
     height: 36px;
-    background: #ee3efe;
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 1rem;
+    background: #EE3EFE;
     border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
-    color: #110038;
-
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 16,5px;
     &:hover {
       background: #ce36db;
     }
   }
-  .choose-drop-down-list {
+  .choose_dropdown_list {
     width: 36px;
     height: 36px;
     background: #ee3efe;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
     color: #110038;
+    margin-right: 16,5px;
     &:hover {
       background: #ce36db;
     }
   }
-}
+
+  #mys_guifos_link{
+    width: 76px;
+    height: 18px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
 
 .container {
   .container_search {
@@ -88,7 +104,7 @@
 }
 
 .suggestion {
-  width: 90vw;
+  width: 1355px;
   height: 32px;
   background: #fffafe;
   border: 1px solid #2e32fb;
@@ -106,31 +122,30 @@
   height: 313px;
   background-color: #b4b4b4;
   box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
-  margin: 10px;
+  margin: 34px;
   .container_gif {
     width: 288px;
     height: 24px;
-    background: linear-gradient(left, #2e32fb 0%, #ee3efe 100%);
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
   }
   .btn_close {
     margin-left: 260px;
   }
   .img_gif {
     width: 288px;
-    height: 280px;
+    height: 288px;
     position: absolute;
   }
   .watch_more {
     width: 81px;
     height: 34px;
-    font-family: "Chakra Petch", sans-serif;
-    color: #ffffff;
-    background: #4180f6;
-    border: 1px solid #4c2f99;
-    box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
     position: relative;
     z-index: 1;
     top: 240px;
     left: 15px;
   }
+}
 }

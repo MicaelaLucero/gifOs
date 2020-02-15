@@ -40,9 +40,9 @@ const renderGifs = (gifs) =>  {
         let img = document.createElement('img')
         let fc = document.createElement('figcaption')
 
-        img.setAttribute("width", "270 ")
-        img.setAttribute("height", "270")
-        img.setAttribute("style", "margin: 10px 0px")
+        img.setAttribute("width", "286")
+        img.setAttribute("height", "296") 
+        img.setAttribute("style", "margin: 15px 14px")
         img.src = gif.images.downsized.url
         img.alt = gif.title
     
