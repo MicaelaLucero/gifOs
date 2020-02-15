@@ -83,8 +83,6 @@ $button_upload.addEventListener('click', async () => {
     document.querySelector('.button_copy').style.display = 'block'
     document.querySelector('.button_download').style.display = 'block'
     document.querySelector('.button_ready2').style.display = 'block'
-    const gif = await getData(`${api_url}/${response.id}?api_key=${api_key}`)
-    renderMyGif(gif)
 })
 
 $button_ready2.addEventListener('click', () => {
@@ -166,7 +164,10 @@ const sendGif = async blob => {
     const response = await upload(endpoints.upload, form)    
     const actualGifs = JSON.parse(localStorage.getItem('myGifs')) || []
     const newGifs = [...actualGifs, response.id]
+    console.log(newGifs)
     localStorage.setItem('myGifs', JSON.stringify(newGifs))
+    const gif = await getData(`${api_url}?api_key=${api_key}&ids=${newGifs}`)
+    renderMyGif(gif)
     return response
 }
 
