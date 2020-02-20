@@ -18,6 +18,10 @@
 
 .title_message{
     margin-left:5px;
+    font-family: ChakraPetch-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
 }
 
 .container_pop_up1{
@@ -35,6 +39,40 @@
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     margin-left: 320px;
+    display: none;
+}
+.container_pop_up3{
+    width: 860px;
+    height: 548px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-left: 320px;
+    display: none;
+}
+.container_pop_up4{
+    width: 860px;
+    height: 548px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-left: 320px;
+    display: none;
+}
+.container_pop_up5{
+    width: 860px;
+    height: 548px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-left: 320px;
+    display: none;
+}
+
+.container_pop_up6{
+    width: 684px;
+    height: 386px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-top: 30px;
+    margin-left: 378px;
     display: none;
 }
 
@@ -57,9 +95,9 @@
 }
 
 .input_my_guifos{
-    width: 1200px;
+    width: 1300px;
     height: 32px;
-    margin: 100px 100px 0px;
+    margin: 100px 0px 0px 50px;
     background: #FFFAFE;
     border: 1px solid #E6BBE2;
     box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
@@ -82,6 +120,8 @@ input[type="text"]{
     color: white;
     background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%);
     box-shadow: 0 1px 0 0 #110038;
+    position: relative;
+    z-index: 5;
 }
 
 .button_cancel{
@@ -132,10 +172,18 @@ input[type="text"]{
     box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
 }
 
+.container_img_info3{
+    width: 832px; 
+    height: 434px;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
+}
+
 .button_container_ready{
     width: 860px;
     height: 30px;
-    display: none;
     position: absolute;
 }
 
@@ -148,7 +196,6 @@ input[type="text"]{
 }
 
 .input_ready{
-    display: none;
     width: 124px;
     height: 36px;
     margin-left: 20px;
@@ -156,11 +203,12 @@ input[type="text"]{
     border: 1px solid #979797;
     box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
     position: relative;
-    top: 10px;
+    top: 488px;
+    right: 10px;
+    text-align: center;
 }
 
 .button_ready{
-    display: none;
     width: 144px;
     height: 36px;
     background: #FF6161;
@@ -169,8 +217,8 @@ input[type="text"]{
     color:white;
     font-size: 16px;
     position: relative;
-    bottom: 65px;
-    left: 700px;
+    top: 448px;
+    left: 660px;
 }
 
 .button_capture{
@@ -184,15 +232,14 @@ input[type="text"]{
 }
 
 .button_clock{
-    display: none;
     width: 36px;
     height: 36px;
     background: #FF6161;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
     position: relative;
-    left: 665px;
-    bottom: 29px;
+    left: 664px;
+    top: 451px;
 }
 
 .button_camera{
@@ -227,74 +274,62 @@ input[type="text"]{
 }
 
 .button_container_loading{
-    display: none;
     height: 36px;
 }
 
 .button_container_repeat{
-    display: none;
     width: 684px;
 }
 
 .button_repeat{
-    display:none;
     width: 144px;
     height: 36px;
     background: #FFF4FD;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     position: relative;
-    left: 870px;
-    bottom: 65px;
+    left: 530px;
+    bottom: 61px;
 }
 
 .button_upload{
-    display: none;
     width: 144px;
     height: 36px;
     background: #F7C9F3;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     position: relative;
-    left: 1020px;
-    bottom: 101px;
+    left: 540px;
+    bottom: 61px;
 }
 
 .upload_box{
-    display: none;
     width: 12px;
     height: 20px;
     background: #999999; 
 }
 
 .upload_box1{
-    display: none;
     width: 12px;
     height: 20px;
     background: #F7C9F3;
 }
 
 .container_upload_box{
-    display: none;
     width: 240px;
     height: 24px;
     background: #B4B4B4;
     box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
 }
 
-.img_info_ready{
-    width: 832px;
-    height: 434px;
-}
 
 #input_loading{
-    display: none;
     position: relative;
     left: 290px;
     bottom: 250px;
 }
 
-.container_pop_up3{
+.container_pop_up5{
     width: 860px;
     height: 548px;
     background: #E6E6E6;
@@ -375,10 +410,16 @@ input[type="text"]{
     letter-spacing: 0;
     text-align: center;
     line-height: 18px;
-    display: none;
+    position: relative;
+    left: 405px;
+    bottom: 170px;
 }
 
-.button_download{
+.a_download{
+    text-decoration: none;
+}
+
+.container_download{
     width: 256px;
     height: 36px;
     background: #FFF4FD;
@@ -389,7 +430,9 @@ input[type="text"]{
     letter-spacing: 0;
     text-align: center;
     line-height: 18px;
-    display: none;
+    position: relative;
+    left: 405px;
+    bottom: 160px;
 }
 
 .button_ready2{
@@ -403,7 +446,9 @@ input[type="text"]{
     letter-spacing: 0;
     text-align: center;
     line-height: 18px;
-    display: none;
+    position: relative;
+    left: 500px;
+    bottom: 50px;
 }
 
 .success{
@@ -412,12 +457,44 @@ input[type="text"]{
     color: #110038;
     letter-spacing: 0;
     line-height: 22px;
-    display: none;
+    position: relative;
+    left: 410px;
+    bottom: 190px;
 }
 
-.my_gif{
+.container_last_gif{
     width: 365px;
     height: 191px;
-    opacity: 0.3;
-    display: none;
+    margin: 30px
+}
+
+#minutes{
+    margin: 5px;
+    font-size: 23px;
+}
+
+#seconds{
+    margin: 5px;
+    font-size: 23px;
+}
+
+#video_container{
+    width: 832px;
+    height: 470px;
+    position: relative;
+    bottom: 35px;
+}
+
+#video_container2{
+    width: 832px;
+    height: 470px;
+    position: relative;
+    bottom: 35px;
+}
+
+#video_container3{
+    width: 832px;
+    height: 470px;
+    position: relative;
+    bottom: 35px;
 }
