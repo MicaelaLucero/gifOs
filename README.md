@@ -1,2 +1,2 @@
 # gifOs
-Web that brings gifs from Giphy API
+Web that brings gifs from Giphy API made in Javascript 
