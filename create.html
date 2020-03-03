@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="prev" href="./index.html" />
+    <link rel="prev" href="./start_video.html" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/create.js"></script>
+    <title>gifOS</title>
+  </head>
+
+  <body class="light">
+    <header>
+
+      <!-- Bar -->
+
+      <section class="bar">
+        ¡Bienvenidos/as a Gifos.com!------Donde los Gifos están.//////Número de
+        visitas:
+      </section>
+
+      <!-- Logo -->
+
+      <section class="logo">
+        <a href="index.html"
+          ><img class="arrow" src="./assets/arrow.svg" alt=""
+        /></a>
+        <img src="./assets/gifOF_logo.png" alt="" />
+      </section>
+
+      <!-- Pop up 1 : Info -->
+
+      <section class="container_pop_up1">
+        <section class="pop_up">
+          <section class="brand_message">
+            <p class="title_message">Crear Gifos</p>
+          </section>
+          <section class="info">
+            <img class="img_info" src="./assets/window img.png" alt="" />
+            <p class="text_info">
+              <b>Aquí podrás crear tus propios Gifos</b><br />
+              <br />
+              Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu
+              cámara y obtén giufos, <br />
+              personalizados. Los pasos para crear tu guifo son: <br />
+              <br />
+              <b>1)</b> Dar permisos de acceso a la cámara(sólo por el tiempo de
+              uso) <br />
+              <b>2)</b> Capturar tu momento guifo <br />
+              <b>3)</b> Revisar el momento <br />
+              <b>4)</b> Listo para subir y compartir! <br />
+              <br />
+              ¿Quieres comenzar a crear tu <b>guifo</b> ahora?
+            </p>
+          </section>
+          <section class="button_container">
+            <a href="create.html"
+              ><button class="button_cancel">Cancelar</button></a
+            >
+            <button class="button_start" id="button_start">
+              Comenzar
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <!-- Pop up 2 : Checking -->
+
+      <section class="container_pop_up2">
+        <section class="pop_up_ready">
+          <section class="brand_message_ready">
+            <p class="title_message">Un Chequeo Antes de Empezar</p>
+            <img
+              src="assets/button3.svg"
+              alt="btn_close"
+              class="btn_close_pop_up"
+            />
+          </section>
+          <section class="container_img_info">
+            <video id="video_container"></video>
+          </section>
+          <section class="button_container_capture">
+            <section class="button_container2">
+              <button class="button_camera">
+                <img src="assets/camera.svg" alt="" class="" />
+              </button>
+
+              <button class="button_capture" id="button_capture">
+                Capturar
+              </button>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!-- Pop up 3 : Capture -->
+
+      <section class="container_pop_up3">
+        <section class="pop_up_ready">
+          <section class="brand_message_ready">
+            <p class="title_message">Capturando tu Guifo</p>
+            <img
+              src="assets/button3.svg"
+              alt="btn_close"
+              class="btn_close_pop_up"
+            />
+          </section>
+          <section class="container_img_info">
+            <video id="video_container2"></video>
+          </section>
+          <section class="button_container_ready">
+            <section class="input_ready" id="clock">
+              <label id="minutes">00</label>:<label id="seconds">00</label>
+            </section>
+            <button class="button_clock">
+              <img src="assets/recording.svg" alt="" class="" />
+            </button>
+
+            <button class="button_ready" id="button_ready">
+              Listo
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <!-- Pop up 4 : Preview -->
+
+      <section class="container_pop_up4">
+        <section class="pop_up_ready">
+          <section class="brand_message_ready">
+            <p class="title_message">Vista Previa</p>
+            <img
+              src="assets/button3.svg"
+              alt="btn_close"
+              class="btn_close_pop_up"
+            />
+          </section>
+          <section class="container_img_info3">
+            <video id="video_container3"></video>
+          </section>
+          <section class="button_container_ready">
+            <section class="input_ready" id="clock">
+              <label id="minutes">00</label>:<label id="seconds">00</label>
+            </section>
+          </section>
+        </section>
+        <!-- <section class="button_container_loading">
+          <section class="container_loading">
+            <section class="forward">
+              <img id="img_forward" src="assets/forward.svg" alt="" />
+            </section>
+            <section class="container_upload_box">
+              <section class="upload_box1"></section>
+              <section class="upload_box1"></section>
+              <section class="upload_box1"></section>
+              <section class="upload_box1"></section>
+              <section class="upload_box1"></section>
+              <section class="upload_box"></section>
+              <section class="upload_box"></section>
+              <section class="upload_box"></section>
+              <section class="upload_box"></section>
+              <section class="upload_box"></section>
+              <section class="upload_box"></section>
+              <section class="upload_box"></section>
+            </section>
+          </section>
+        </section> -->
+        <section class="button_container_repeat">
+          <button class="button_repeat">Repetir Captura</button>
+          <button class="button_upload">Subir Guifo</button>
+        </section>
+      </section>
+
+      <!-- Pop up 5 : Upload -->
+
+      <section class="container_pop_up5">
+        <section class="pop_up_loading">
+          <section class="brand_message_loading">
+            <p class="title_message_loading">Subiendo Guifo</p>
+            <img
+              src="assets/button3.svg"
+              alt="btn_close"
+              class="btn_close_pop_up"
+            />
+          </section>
+          <section class="container_img_loading">
+            <img id="globe_img" src="assets/globe_img.png" />
+            <p id="info_loading">Estamos subiendo tu guifo</p>
+            <p id="info_time_loading">
+              Tiempo restante: 38 años algunos minutos
+            </p>
+          </section>
+          <button id="button_cancel_loading">
+            Cancelar
+          </button>
+        </section>
+      </section>
+
+      <!-- Pop up 6 : Success -->
+
+      <section class="container_pop_up6">
+        <section class="pop_up">
+          <section class="brand_message">
+            <p class="title_message">Guifo subido con éxito</p>
+          </section>
+          <section class="container_last_gif"></section>
+          <p class="success">Guifo creado con exito</p>
+          <button class="button_copy">Copiar enlace Guifo</button>
+          <div class="container_download">
+            <a href="" download="" class="a_download">Descargar Guifo </a>
+          </div>
+          <button class="button_ready2">Listo</button>
+        </section>
+      </section>
+
+      <!-- Mys Guifos -->
+
+      <section class="my_guifos">
+        <input type="text" class="input_my_guifos" placeholder="Mis Guifos" />
+        <section class="container_my_guifos"></section>
+      </section>
+
+    </header>
+  </body>
+</html>

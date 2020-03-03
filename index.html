@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="next" href="./ready_video.html" />
+    <link rel="next" href="./start_video.html" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/functions.js"></script>
+    <script src="./js/index.js"></script>
+    <title>gifOS</title>
+  </head>
+
+  <body class="light">
+    <header>
+      <section class="bar">
+        ¡Bienvenidos/as a Gifos.com!------Donde los Gifos están.//////Número de
+        visitas:
+      </section>
+
+      <!-- Navbar -->
+
+      <section class="navbar_brand_container">
+        <section class="navbar_brand_image">
+          <img id="logo_light" src="./assets/gifOF_logo.png" alt="" />
+          <img id="logo_dark" src="./assets/gifOF_logo_dark.png" alt="" />
+        </section>
+        <section>
+          <nav>
+            <ul>
+              <li>
+                <a href="create.html"
+                  ><button class="button_create">Crear Gifos</button></a
+                >
+              </li>
+              <li><button class="button_choose">Elegir Tema</button></li>
+              <li class="dropdown">
+                <button class="choose_dropdown_list">
+                  <img src="assets/dropdown.svg" alt="deploy" />
+                </button>
+
+                <section class="dropdown_content">
+                  <a href="#" class="day">Saylor Day</a>
+                  <a href="#" class="night">Saylor Night</a>
+                </section>
+              </li>
+              <li>
+                <a href="create.html" id="mys_guifos_link">Mis Guifos</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+
+      <!-- Search -->
+
+      <section class="container">
+        <section class="container_search">
+          <p id="search">Buscar</p>
+        </section>
+        <input
+          type="text"
+          class="input"
+          id="search_input"
+          placeholder="Busca gifs, hashtags, temas, busca lo que quieras.."
+        />
+        <button class="search_button" id="search_button">
+          <img src="assets/lupa.svg" alt="loupe" class="loupe" />Buscar
+        </button>
+      </section>
+
+      <!-- Suggestion -->
+
+      <section class="write_input">
+        <section class="suggested_gif">Pets</section>
+        <section class="suggested_gif">The Walking Dead</section>
+        <section class="suggested_gif">Friends</section>
+      </section>
+      <section class="suggestion">
+        <p>Hoy te sugerimos</p>
+      </section>
+
+      <!-- Gifs Random -->
+
+      <section class="trending_container" id="trending_container">
+        <section class="gif">
+          <section class="container_gif">
+            <p>#Desencanto</p>
+            <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
+          </section>
+          <img
+            id="img1"
+            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
+            alt=""
+            class="img_gif"
+          />
+          <button class="watch_more1">Ver más</button>
+        </section>
+        <section class="gif">
+          <section class="container_gif">
+            <p>#Futurama</p>
+            <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
+          </section>
+          <img
+            id="img2"
+            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
+            alt=""
+            class="img_gif"
+          />
+          <button class="watch_more2">Ver más</button>
+        </section>
+        <section class="gif">
+          <section class="container_gif">
+            <p>#Simpsons</p>
+            <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
+          </section>
+          <img
+            id="img3"
+            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
+            alt=""
+            class="img_gif"
+          />
+          <button class="watch_more3">Ver más</button>
+        </section>
+        <section class="gif">
+          <section class="container_gif">
+            <p>#Dibujos animados</p>
+            <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
+          </section>
+          <img
+            id="img4"
+            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
+            alt=""
+            class="img_gif"
+          />
+          <button class="watch_more4">Ver más</button>
+        </section>
+      </section>
+
+      <!-- Gifs Search -->
+      
+      <section class="suggestion">
+        <p>Tendencias</p>
+      </section>
+      <section id="search_container"></section>
+    </header>
+  </body>
+</html>
