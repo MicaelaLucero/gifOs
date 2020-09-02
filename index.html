@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,16 +27,18 @@
 
       <section class="navbar_brand_container">
         <section class="navbar_brand_image">
-          <img id="logo_light" src="./assets/gifOF_logo.png" alt="" />
-          <img id="logo_dark" src="./assets/gifOF_logo_dark.png" alt="" />
+          <img id="logo_light" src="./assets/gifOF_logo.png" alt="blue gifos logo" />
+          <img id="logo_dark" src="./assets/gifOF_logo_dark.png" alt="pink gifos logo" />
         </section>
         <section>
           <nav>
             <ul>
               <li>
-                <a href="create.html"
-                  ><button class="button_create">Crear Gifos</button></a
-                >
+                <section class="container_create">
+                  <a href="create.html" id="a_create"
+                    ><p class="button_create">Crear Gifos</p></a
+                  >
+                </section>
               </li>
               <li><button class="button_choose">Elegir Tema</button></li>
               <li class="dropdown">
@@ -49,7 +52,9 @@
                 </section>
               </li>
               <li>
-                <a href="create.html" id="mys_guifos_link">Mis Guifos</a>
+                <a href="mys_guifos.html" id="mys_guifos_link"
+                  ><span>M</span>is Guifos</a
+                >
               </li>
             </ul>
           </nav>
@@ -62,26 +67,26 @@
         <section class="container_search">
           <p id="search">Buscar</p>
         </section>
-        <input
-          type="text"
-          class="input"
-          id="search_input"
-          placeholder="Busca gifs, hashtags, temas, busca lo que quieras.."
-        />
-        <button class="search_button" id="search_button">
-          <img src="assets/lupa.svg" alt="loupe" class="loupe" />Buscar
-        </button>
+        <section class="container_search_input">
+          <input
+            type="text"
+            class="input"
+            id="search_input"
+            placeholder="Busca gifs, hashtags, temas, busca lo que quieras.."
+          />
+          <button class="search_button" id="search_button">
+            <img src="assets/lupa.svg" alt="loupe" class="loupe" />Buscar
+          </button>
+        </section>
       </section>
 
       <!-- Suggestion -->
 
-      <section class="write_input">
-        <section class="suggested_gif">Pets</section>
-        <section class="suggested_gif">The Walking Dead</section>
-        <section class="suggested_gif">Friends</section>
-      </section>
-      <section class="suggestion">
-        <p>Hoy te sugerimos</p>
+      <section class="write_input"></section>
+      <section class="container_suggestion">
+        <section class="suggestion">
+          <p>Hoy te sugerimos</p>
+        </section>
       </section>
 
       <!-- Gifs Random -->
@@ -92,12 +97,7 @@
             <p>#Desencanto</p>
             <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
           </section>
-          <img
-            id="img1"
-            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
-            alt=""
-            class="img_gif"
-          />
+          <img id="img1" src="" alt="" class="img_gif" />
           <button class="watch_more1">Ver más</button>
         </section>
         <section class="gif">
@@ -105,12 +105,7 @@
             <p>#Futurama</p>
             <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
           </section>
-          <img
-            id="img2"
-            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
-            alt=""
-            class="img_gif"
-          />
+          <img id="img2" src="" alt="" class="img_gif" />
           <button class="watch_more2">Ver más</button>
         </section>
         <section class="gif">
@@ -118,12 +113,7 @@
             <p>#Simpsons</p>
             <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
           </section>
-          <img
-            id="img3"
-            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
-            alt=""
-            class="img_gif"
-          />
+          <img id="img3" src="" alt="" class="img_gif" />
           <button class="watch_more3">Ver más</button>
         </section>
         <section class="gif">
@@ -131,20 +121,17 @@
             <p>#Dibujos animados</p>
             <img src="assets/button3.svg" alt="btn_close" class="btn_close" />
           </section>
-          <img
-            id="img4"
-            src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp"
-            alt=""
-            class="img_gif"
-          />
+          <img id="img4" src="" alt="" class="img_gif" />
           <button class="watch_more4">Ver más</button>
         </section>
       </section>
 
       <!-- Gifs Search -->
-      
-      <section class="suggestion">
-        <p>Tendencias</p>
+
+      <section class="container_suggestion">
+        <section class="suggestion">
+          <p>Tendencias</p>
+        </section>
       </section>
       <section id="search_container"></section>
     </header>
