@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const $button_ready2 = document.querySelector(".button_ready2");
   const img = document.createElement("img");
   const $a = document.querySelector(".a_download");
-  const minutesLabel = document.getElementById("minutes");
-  const secondsLabel = document.getElementById("seconds");
+  const minutesLabel = document.querySelector(".minutes");
+  const secondsLabel = document.querySelector(".seconds");
   let recorder = null;
   let blob = null;
+  let lastGif = null;
 
   // Functions for click
 
@@ -47,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   $button_ready.addEventListener("click", async () => {
     $pop_up3.style.display = "none";
     $pop_up4.style.display = "block";
+    $video_container.srcObject = null;
     await stopRecord(recorder, $video_container2);
     let blob = await recorder.getBlob();
     preview(blob);
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let response = await sendGif(blob);
     const gif = await getData(`${api_url}/${response.id}?api_key=${api_key}`);
     renderLastGif(gif);
+    lastGif = gif;
     renderOtherGif(gif);
     $pop_up5.style.display = "none";
     $pop_up6.style.display = "block";
@@ -89,9 +92,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.querySelector(".button_copy").addEventListener("click", async () => {
     let input = document.createElement("input");
-    let blob = await recorder.getBlob();
-    const blobUrl = URL.createObjectURL(blob);
-    input.setAttribute("value", blobUrl);
+    let url = lastGif.images.downsized.url;
+    input.setAttribute("value", url);
     document.body.appendChild(input);
     input.select();
     document.execCommand("copy");
@@ -128,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       width: 360,
       hidden: 240,
       onGifRecordingStarted: function() {
-        console.log(recorder)
+        console.log(recorder);
       }
     });
     recorder.startRecording();
@@ -215,20 +217,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     let img = document.createElement("img");
     img.setAttribute("width", "365");
     img.setAttribute("height", "191");
-    img.setAttribute("style", "opacity: 0.3");
+    img.setAttribute("style", "opacity: 0.8");
     img.src = gif.images.downsized.url;
     img.alt = gif.title;
     $container.appendChild(img);
   };
 
   const renderOtherGif = gif => {
+    let $container = document.querySelector(".container_my_guifos");
     let img = document.createElement("img");
     img.setAttribute("width", "280");
     img.setAttribute("height", "298");
     img.setAttribute("style", "margin: 15px 15px 15px 50px");
     img.src = gif.images.downsized.url;
     img.alt = gif.title;
-    $my_guifos.appendChild(img);
+    $container.appendChild(img);
   };
 
   // Showing the gallery from the beginnning
@@ -238,7 +241,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const gifs = await getData(`${api_url}?api_key=${api_key}&ids=${myGifs}`);
   renderMyGifs(gifs);
 
-  // Functions for timer 
+  // Functions for timer
 
   const Clock = {
     totalSeconds: 0,
@@ -272,4 +275,21 @@ document.addEventListener("DOMContentLoaded", async () => {
       Clock.start();
     }
   };
+
+  const body = document.querySelector("body");
+  const bodyclass = localStorage.getItem("color-theme");
+
+  let activateThemes = bodyclass => {
+    if (bodyclass == "dark-mode") {
+      body.classList.add("dark");
+      body.classList.remove("light");
+    } else if (bodyclass == "light-mode") {
+      body.classList.add("light");
+      body.classList.remove("dark");
+    } else {
+      body.classList.add("light");
+    }
+  };
+
+  activateThemes(bodyclass);
 });
